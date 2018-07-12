@@ -1,0 +1,288 @@
+openapi: 3.0.1
+info:
+  title: Wisley API
+  description: API for Wisley plant locator
+  version: '0.1'
+servers:
+  - url: 'http://127.0.0.1:5000'
+paths:
+  /routes/bed/{bed_id}:
+    get:
+      description: Finds shortest route to bed_id from location given by lat and long
+      parameters:
+        - name: bed_id
+          in: path
+          required: true
+          description: The ID of the destination flower bed
+          schema:
+            type: integer
+            example: bed_id=1
+        - $ref: '#/components/parameters/longParam'
+        - $ref: '#/components/parameters/latParam'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/routeSchema'
+        '400':
+          description: Bad Request - Check all required parameters present and of correct type
+        '404':
+          description: Not Found - flower bed does not exist
+        '500':
+          description: Internal Server Error
+  /routes/place/{place_id}:
+    get:
+      description: Finds shortest route to place_id from location given by lat and long
+      parameters:
+        - name: place_id
+          in: path
+          required: true
+          description: The ID of the destination place
+          schema:
+            type: integer
+          example: place_id=1
+        - $ref: '#/components/parameters/longParam'
+        - $ref: '#/components/parameters/latParam'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/routeSchema'
+        '400':
+          description: Bad Request - Check all required parameters present and of correct type
+        '404':
+          description: Not Found - place does not exist
+        '500':
+          description: Internal Server Error
+  /plants:
+    get:
+      description: Searches plant records by month, name OR bed id
+      parameters:
+        - name: name
+          description: A complete or partial plant name which will be compared to the preferred common name, accepted botanical name, common names and synonyms fields
+          in: query
+          schema:
+            type: string
+            example: name=grass
+        - name: month
+          description: Month identifier, where 1=January
+          in: query
+          schema:
+            type: integer
+            example: month=8
+        - name: id
+          description: Flower bed identifier
+          in: query
+          schema:
+            type: integer
+            example: id=1
+        - $ref: '#/components/parameters/nParam'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                    $ref: '#/components/schemas/plantSchema'
+        '400':
+          description: Bad Request - Need to provide either month, name or id.  Additional paramters will be ignored.
+        '500':
+          description: Internal Server Error
+  /beds:
+    get:
+      description: Gets the n nearest beds to the location given by lat and long.
+      parameters:
+        - $ref: '#/components/parameters/longParam'
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/nParam'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                    $ref: '#/components/schemas/nodeSchema'
+        '400':
+          description: Bad Request - lat and long are required.
+        '500':
+          description: Internal Server Error
+  /places:
+    get:
+      description: Gets the n nearest places to the location given by lat and long.
+      parameters:
+        - $ref: '#/components/parameters/longParam'
+        - $ref: '#/components/parameters/latParam'
+        - $ref: '#/components/parameters/nParam'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                    $ref: '#/components/schemas/placeSchema'
+        '400':
+          description: Bad Request - lat and long are required.
+        '500':
+          description: Internal Server Error
+components: 
+  parameters:
+    longParam:
+      name: long
+      in: query
+      required: true
+      description: The longitude of the starting position (degrees, WGS 84)
+      schema:
+        type: number
+        example: long=-0.85324042683577
+    latParam:    
+      name: lat
+      in: query
+      required: true
+      description: The latitude of the starting position (degrees, WGS 84)
+      schema:
+        type: number
+        example: lat=51.2912194132039
+    nParam:
+      name: n
+      in: query
+      required: false
+      description: Number of records required. 0 returns all.
+      schema:
+        type: integer
+        default: 0
+        example: 5
+  schemas:
+    nodeSchema:
+      type: object
+      properties:
+        id:
+          type: integer
+        lat:
+          type: number
+        long:
+          type: number
+        name:
+          type: string
+    placeSchema:
+      type: object
+      properties:
+        id:
+          type: integer
+        lat:
+          type: number
+        long:
+          type: number
+        name:
+          type: string
+        description:
+          type: string
+    routeSchema:
+      type: object
+      properties:
+        destination:
+          type: object
+          properties:
+            id:
+              type: integer
+            lat:
+              type: number
+            long:
+              type: number
+            name:
+              type: string
+        length:
+          type: number
+        stages:
+          type: array
+          items:
+            type: object
+            properties:
+              node2:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  lat:
+                    type: number
+                  long:
+                    type: number
+                  name:
+                    type: string
+              instruction:
+                type: string
+              length:
+                type: number
+              node1:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  lat:
+                    type: number
+                  long:
+                    type: number
+                  name:
+                    type: string
+    plantSchema:
+      type: object
+      properties:
+          accepted_botanical_name:
+            type: string
+          aspect:
+            type: string
+          common_names:
+            type: array
+            items:
+              type: string
+          cultivation:
+            type: string
+          description:
+            type: string
+          disease_resistance:
+            type: string
+          exposure:
+            type: string
+          flower_colour:
+            type: string
+          foliage:
+            type: string
+          hardiness:
+            type: string
+          height:
+            type: string
+          low_maintenance:
+            type: string
+          moisture:
+            type: string
+          name_num:
+            type: string
+          ph:
+            type: string
+          pic:
+            type: string
+          preferred_common_name:
+            type: string
+          soil_type:
+            type: string
+          spread:
+            type: string
+          sunlight:
+            type: string
+          synonyms:
+            type: array
+            items:
+              type: string
+          time_to_full_height:
+            type: string
+          uses:
+            type: string
