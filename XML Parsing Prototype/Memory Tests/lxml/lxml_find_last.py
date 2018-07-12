@@ -25,6 +25,5 @@ if __name__ == '__main__':
 
     number_of_plants = config['TimeTests']['number_of_plants']
 
-
     print('\n\n\n#####lxml, find, ' + number_of_plants + ' plants, last plant#####\n')
     lxml_find('PCN ' + number_of_plants)
