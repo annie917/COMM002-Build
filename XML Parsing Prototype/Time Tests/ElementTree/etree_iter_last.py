@@ -17,7 +17,7 @@ def elemtree_iterparse(plant_to_find):
         elem.clear()
 
 
-# ElementTree, very big file, iterparse, last plant
+# ElementTree, iterparse, last plant
 
 import configparser
 

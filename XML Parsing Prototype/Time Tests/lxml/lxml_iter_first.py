@@ -17,7 +17,7 @@ def lxml_iterparse(plant_to_find):
         elem.clear()
 
 
-# lxml, very big file, iterparse, first plant
+# lxml, iterparse, first plant
 
 import configparser
 

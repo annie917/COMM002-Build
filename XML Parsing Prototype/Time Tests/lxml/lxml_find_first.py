@@ -14,7 +14,7 @@ def lxml_find(plant_to_find):
     s = plant.attrib['Name_Num']
 
 
-# lxml, very big file, find, first plant
+# lxml, find, first plant
 
 import configparser
 
