@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml>
+  <Document>
+    <Style id="5d4f09ecaa">
+      <LineStyle>
+        <color>a605feff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>a600ff00</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+      </PolyStyle>
+    </Style>
+    <Style id="b182c84bb1">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>0</scale>
+      </IconStyle>
+      <LineStyle>
+        <color>e6ffffff</color>
+      </LineStyle>
+    </Style>
+    <Style id="30ded4b7a9">
+      <IconStyle>
+        <scale>0.96</scale>
+        <Icon>
+          <href>https://cdn.scribblemaps.com/markers/shapes/placemark_circle_highlight.png</href>
+        </Icon>
+        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction" />
+      </IconStyle>
+    </Style>
+    <Style id="98bf13e88b">
+      <LineStyle>
+        <color>a6ffed66</color>
+        <width>8</width>
+      </LineStyle>
+    </Style>
+    <Placemark id="415aad0d93">
+      <description />
+      <styleUrl>#5d4f09ecaa</styleUrl>
+      <Polygon id="1">
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-0.85278176909423,51.2921360770664
+-0.85267448073363,51.2920572430161
+-0.8527401948545,51.291689069436
+-0.85289576297736,51.2915775265159
+-0.85304060226416,51.2914911434667
+-0.85298829918837,51.2916085572802
+-0.85283273106551,51.2917754521128</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark id="1613629e7f">
+      <description />
+      <styleUrl>#5d4f09ecaa</styleUrl>
+      <Polygon id="2">
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-0.85251220708823,51.2916966174434
+-0.85261681323981,51.2916991334456
+-0.8526503408525,51.291605202604
+-0.85254707580542,51.2916244919889
+-0.8525430524919,51.2916328786755</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark id="3a787aabc5">
+      <description />
+      <styleUrl>#5d4f09ecaa</styleUrl>
+      <Polygon id="3">
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-0.85270934945082,51.2915188196076
+-0.85268252736068,51.291528044984
+-0.85256719237304,51.2915758491773
+-0.85258596783614,51.2915523664219
+-0.85267179852462,51.2915079168877</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark id="f4e1ed710a">
+      <description />
+      <styleUrl>#5d4f09ecaa</styleUrl>
+      <Polygon id="4">
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-0.85184701925254,51.2917066814519
+-0.85177325850463,51.2917586787908
+-0.85169949775672,51.2917821614407
+-0.85165524130797,51.2917687427851
+-0.851660605726,51.2917452601284
+-0.85183494931197,51.2916949401091
+-0.85183897262549,51.2916974561114</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark id="f3999ed3c7">
+      <description />
+      <styleUrl>#5d4f09ecaa</styleUrl>
+      <Polygon id="5">
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-0.85190200453734,51.2924203817198
+-0.85189932232833,51.2924421867237
+-0.85186311250663,51.2924488959536
+-0.85175448304152,51.2924438640313
+-0.85167133456206,51.2924052859418
+-0.85168876892066,51.2923650305095
+-0.85179069286322,51.2924052859418</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark id="59edf6c5e2">
+      <description />
+      <styleUrl>#5d4f09ecaa</styleUrl>
+      <Polygon id="6">
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-0.85237139111495,51.2923759330257
+-0.8522909248445,51.2923499347131
+-0.85213669782615,51.2924245749905
+-0.85210853463149,51.2924614757569
+-0.8520387971971,51.2924824420883
+-0.85196101313567,51.2925621140601
+-0.85204550271964,51.2926954594721
+-0.85212596899009,51.2925503729361</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark id="391a5277db">
+      <description />
+      <styleUrl>#5d4f09ecaa</styleUrl>
+      <Polygon id="7">
+        <altitudeMode>clampToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>-0.85244515186286,51.2920907894378
+-0.85248404389357,51.292044663102
+-0.85242235308623,51.2920069233388
+-0.85237675553298,51.292006084677</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark id="ce4d1c0cfc">
+      <name>Bed 1</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85281730836367,51.291727648128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="10339cce30">
+      <name>Bed 2</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85257859176135,51.2916941014418</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="a1017cfd10">
+      <name>Bed 3</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85254908746218,51.2915146262541</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="34615bc27f">
+      <name>Bed 4</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85170419162249,51.2917762907795</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="a5584fcf39">
+      <name>Bed 5</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85175515359378,51.2924505732611</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="bb862d3a9a">
+      <name>Bed 6</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85212798064685,51.2924774101698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="1724ff9e3d">
+      <name>Bed 7</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85251690095401,51.2920362764914</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="7beec358c2">
+      <name>Node 1</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85302115624881,51.2914391458255</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="0462aa879e">
+      <name>Node 2</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85251421874499,51.2916135892949</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="c53067cb2f">
+      <name>Node 3</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.8524257058475,51.2918769305846</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="5770a342f6">
+      <name>Node 4</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85234255736804,51.2920077620013</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ba274a3aac">
+      <name>Node 5</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85246593898272,51.2921419476825</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="3d23e88230">
+      <name>1</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85297019427752,51.2914374684812</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="0bbbd94a8e">
+      <name>2</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85245252793765,51.291611911957</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="1ed96e992e">
+      <name>3</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85236937945819,51.2918752532563</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="c918465c6b">
+      <name>4</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85228623097873,51.2920044073542</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="43a70d6cb1">
+      <name>5</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.8524069303844,51.2921385930453</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="a62611012a">
+      <name>Node 6</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85266710465884,51.2921402703639</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="1c508f70c7">
+      <name>6</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85273684209323,51.2921520115928</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="2647e92a46">
+      <name>Node 7</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85208238309359,51.2923650305096</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="23830aa307">
+      <name>7</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85208238309359,51.2923230977301</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="5697ce7c8a">
+      <name>Node 8</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85187317079043,51.2923985767057</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="5e745cb842">
+      <name>8</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85188658183551,51.2923532893352</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ed4aada678">
+      <name>Node 9</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85161836093402,51.2923063246076</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="537498dc6b">
+      <name>9</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85164786523318,51.2922543278888</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="9fdb4c3116">
+      <name>Node 10</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85269929116702,51.2916605547311</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="c09a57d3b3">
+      <name>10</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85267515128588,51.2916169439704</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="f399cd1e3c">
+      <name>Node 11</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85259468501544,51.2919020905014</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="818fb71eab">
+      <name>11</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85253031199908,51.2918937038639</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="5617f6be97">
+      <name>Node 12</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.8519026750896,51.2916672640752</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="3768a7aa30">
+      <name>12</name>
+      <description />
+      <styleUrl>#b182c84bb1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85181952661013,51.2916437813664</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="fe15fd8323">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85301847403979,51.2914374684812
+-0.85269929116702,51.2916605547311</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="3a31f5ce0d">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.8526054138515,51.2919020905014
+-0.85269929116702,51.2916605547311</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="d2f3c0579a">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85247398560977,51.2921453023195
+-0.85267246907687,51.2921369157265
+-0.8526054138515,51.2919020905014</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="110913c0ab">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85251690095401,51.2916135892949
+-0.85301847403979,51.2914374684812</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="95c0dbce25">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85191876834369,51.2916689414111
+-0.85251690095401,51.2916135892949</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="8bb4c304bf">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.8524257058475,51.2918769305846
+-0.85251690095401,51.2916135892949</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="a61ca8b4e0">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85234792178607,51.2920060846778
+-0.8524257058475,51.2918769305845
+-0.8526054138515,51.2919020905014</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="1d1277bd61">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85247398560977,51.2921453023195
+-0.85234792178607,51.2920060846778</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="d65647d85d">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85209579413867,51.2923633531992
+-0.85247398560977,51.2921453023195</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="79118ecc0d">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85187853520846,51.2923952220872
+-0.85209579413867,51.2923633531992</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="28d1a3d849">
+      <description />
+      <styleUrl>#98bf13e88b</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85163177197909,51.2923080019201
+-0.85187853520846,51.2923952220872</coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

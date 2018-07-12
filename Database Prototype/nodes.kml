@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml>
+  <Document>
+    <Style id="5d4f09ecaa">
+      <LineStyle>
+        <color>a605feff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>a600ff00</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+      </PolyStyle>
+    </Style>
+    <Style id="b182c84bb1">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>0</scale>
+      </IconStyle>
+      <LineStyle>
+        <color>e6ffffff</color>
+      </LineStyle>
+    </Style>
+    <Style id="30ded4b7a9">
+      <IconStyle>
+        <scale>0.96</scale>
+        <Icon>
+          <href>https://cdn.scribblemaps.com/markers/shapes/placemark_circle_highlight.png</href>
+        </Icon>
+        <hotSpot x="0.5" xunits="fraction" y="0.5" yunits="fraction" />
+      </IconStyle>
+    </Style>
+    <Style id="98bf13e88b">
+      <LineStyle>
+        <color>a6ffed66</color>
+        <width>8</width>
+      </LineStyle>
+    </Style>
+    <Placemark id="7beec358c2">
+      <name>Node 1</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85302115624881,51.2914391458255</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="0462aa879e">
+      <name>Node 2</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85251421874499,51.2916135892949</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="c53067cb2f">
+      <name>Node 3</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.8524257058475,51.2918769305846</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="5770a342f6">
+      <name>Node 4</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85234255736804,51.2920077620013</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ba274a3aac">
+      <name>Node 5</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85246593898272,51.2921419476825</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="a62611012a">
+      <name>Node 6</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85266710465884,51.2921402703639</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="2647e92a46">
+      <name>Node 7</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85208238309359,51.2923650305096</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="5697ce7c8a">
+      <name>Node 8</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85187317079043,51.2923985767057</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ed4aada678">
+      <name>Node 9</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85161836093402,51.2923063246076</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="9fdb4c3116">
+      <name>Node 10</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85269929116702,51.2916605547311</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="f399cd1e3c">
+      <name>Node 11</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.85259468501544,51.2919020905014</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="5617f6be97">
+      <name>Node 12</name>
+      <description />
+      <styleUrl>#30ded4b7a9</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>-0.8519026750896,51.2916672640752</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
