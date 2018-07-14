@@ -1,4 +1,4 @@
-USE wisley;
+USE wisley_pt;
 
 /* Query to find closet flower bed containing plant 76294*/
 SELECT pb.bed_id, ST_Distance(ST_PointFromText('POINT(480060.6195600935 155300.5319708603)'), fb.polygon) 

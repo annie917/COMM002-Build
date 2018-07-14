@@ -8,19 +8,19 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- Schema mydb
 -- -----------------------------------------------------
 -- -----------------------------------------------------
--- Schema wisley
+-- Schema wisley_pt
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema wisley
+-- Schema wisley_pt
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `wisley` DEFAULT CHARACTER SET UTF8MB3 ;
-USE `wisley` ;
+CREATE SCHEMA IF NOT EXISTS `wisley_pt` DEFAULT CHARACTER SET UTF8MB3 ;
+USE `wisley_pt` ;
 
 -- -----------------------------------------------------
--- Table `wisley`.`node`
+-- Table `wisley_pt`.`node`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `wisley`.`node` (
+CREATE TABLE IF NOT EXISTS `wisley_pt`.`node` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `coordinates` POINT NULL DEFAULT NULL,
   `proj_coord` POINT NOT NULL,
@@ -32,9 +32,9 @@ DEFAULT CHARACTER SET = UTF8MB3;
 
 
 -- -----------------------------------------------------
--- Table `wisley`.`edge`
+-- Table `wisley_pt`.`edge`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `wisley`.`edge` (
+CREATE TABLE IF NOT EXISTS `wisley_pt`.`edge` (
   `node1` INT(11) NOT NULL,
   `node2` INT(11) NOT NULL,
   `proj1` POINT NULL DEFAULT NULL,
@@ -46,18 +46,18 @@ CREATE TABLE IF NOT EXISTS `wisley`.`edge` (
   INDEX `edge_node2_fkey_idx` (`node2` ASC),
   CONSTRAINT `edge_node1_fkey`
     FOREIGN KEY (`node1`)
-    REFERENCES `wisley`.`node` (`id`),
+    REFERENCES `wisley_pt`.`node` (`id`),
   CONSTRAINT `edge_node2_fkey`
     FOREIGN KEY (`node2`)
-    REFERENCES `wisley`.`node` (`id`))
+    REFERENCES `wisley_pt`.`node` (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = UTF8MB3;
 
 
 -- -----------------------------------------------------
--- Table `wisley`.`flower_bed`
+-- Table `wisley_pt`.`flower_bed`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `wisley`.`flower_bed` (
+CREATE TABLE IF NOT EXISTS `wisley_pt`.`flower_bed` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `polygon` POLYGON NULL DEFAULT NULL,
   `nearest_node` INT(11) NULL DEFAULT NULL,
@@ -65,16 +65,16 @@ CREATE TABLE IF NOT EXISTS `wisley`.`flower_bed` (
   INDEX `flower_bed_nearest_node_fkey_idx` (`nearest_node` ASC),
   CONSTRAINT `flower_bed_nearest_node_fkey`
     FOREIGN KEY (`nearest_node`)
-    REFERENCES `wisley`.`node` (`id`))
+    REFERENCES `wisley_pt`.`node` (`id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = UTF8MB3;
 
 
 -- -----------------------------------------------------
--- Table `wisley`.`place`
+-- Table `wisley_pt`.`place`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `wisley`.`place` (
+CREATE TABLE IF NOT EXISTS `wisley_pt`.`place` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL DEFAULT NULL,
   `coordinates` POINT NULL DEFAULT NULL,
@@ -85,31 +85,31 @@ CREATE TABLE IF NOT EXISTS `wisley`.`place` (
   INDEX `place_nearest_node_fkey_idx` (`nearest_node` ASC),
   CONSTRAINT `place_nearest_node_fkey`
     FOREIGN KEY (`nearest_node`)
-    REFERENCES `wisley`.`node` (`id`))
+    REFERENCES `wisley_pt`.`node` (`id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 1
 DEFAULT CHARACTER SET = UTF8MB3;
 
 
 -- -----------------------------------------------------
--- Table `wisley`.`plant_bed`
+-- Table `wisley_pt`.`plant_bed`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `wisley`.`plant_bed` (
+CREATE TABLE IF NOT EXISTS `wisley_pt`.`plant_bed` (
   `plant_id` INT(11) NOT NULL,
   `bed_id` INT(11) NOT NULL,
   PRIMARY KEY (`plant_id`, `bed_id`),
   INDEX `plant_bed_bed_id_fkey_idx` (`bed_id` ASC),
   CONSTRAINT `plant_bed_bed_id_fkey`
     FOREIGN KEY (`bed_id`)
-    REFERENCES `wisley`.`flower_bed` (`id`))
+    REFERENCES `wisley_pt`.`flower_bed` (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = UTF8MB3;
 
 
 -- -----------------------------------------------------
--- Table `wisley`.`plant_month`
+-- Table `wisley_pt`.`plant_month`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `wisley`.`plant_month` (
+CREATE TABLE IF NOT EXISTS `wisley_pt`.`plant_month` (
   `plant_id` INT(11) NOT NULL,
   `month_id` INT(11) NOT NULL,
   PRIMARY KEY (`plant_id`, `month_id`))

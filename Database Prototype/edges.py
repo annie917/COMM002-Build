@@ -9,7 +9,7 @@ def initialise_edges():
     # and generates SQL to insert into edges table
 
     # First of all, retrieve all nodes from database and store in dictionary keyed on node id
-    cnx = mysql.connector.connect(user=user, host=host, database=database, password=password)
+    cnx = mysql.connector.connect(user=user, host=host, database='wisley_pt', password=password)
 
     cursor = cnx.cursor()
 
@@ -33,7 +33,7 @@ def initialise_edges():
 
     f1 = open('./adj_list.txt', 'r')
     f2 = open('create_edges.sql', 'w')
-    f2.write('USE wisley;\n')
+    f2.write('USE wisley_pt;\n')
 
     for line in f1:
 
@@ -164,7 +164,6 @@ config.read('../Common Files/config.ini')
 
 user = config['MySql']['user']
 host = config['MySql']['host']
-database = config['MySql']['database']
 password = config['MySql']['password']
 geo_string = config['Projections']['geographic']
 proj_string = config['Projections']['projected']

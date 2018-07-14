@@ -7,7 +7,7 @@ def import_polygons():
     tree = ET.parse('./Elvetham.kml')
 
     f = open('create_polygons.sql','w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     for polygon in tree.iter(tag='Polygon'):
 
@@ -47,7 +47,7 @@ def import_points():
 
     f = open('create_nodes.sql', 'w')
 
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     # Check if Placemark is a Point and if so, grab name
 
@@ -77,7 +77,7 @@ def import_points():
 def populate_places():
 
     f = open('create_places.sql', 'w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     geo_node = GeoNode.from_db_string('POINT(-0.85198112970328 51.2924438640308)')
     proj_node = geo_node.convert()

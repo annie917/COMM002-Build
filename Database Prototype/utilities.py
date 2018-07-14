@@ -6,10 +6,10 @@ def nearest_node_to_bed():
 
     # Open file to store SQL statements
     f = open('update_beds.sql', 'w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     # First of all, retrieve all flower beds from database in a buffered cursor
-    cnx = mysql.connector.connect(user=user, host=host, database=database, password=password)
+    cnx = mysql.connector.connect(user=user, host=host, database='wisley_pt', password=password)
 
     cursor_beds = cnx.cursor(buffered=True)
     cursor_dist = cnx.cursor(buffered=True)
@@ -46,10 +46,10 @@ def nearest_node_to_place():
 
     # Open file to store SQL statements
     f = open('update_place.sql', 'w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     # First of all, retrieve all points of interest from database in a buffered cursor
-    cnx = mysql.connector.connect(user=user, host=host, database=database, password=password)
+    cnx = mysql.connector.connect(user=user, host=host, database='wisley_pt', password=password)
 
     cursor_poi = cnx.cursor(buffered=True)
     cursor_dist = cnx.cursor(buffered=True)
@@ -93,7 +93,7 @@ def populate_beds():
 
     # Open file to store SQL statements
     f = open('insert_plant_beds.sql', 'w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     for bed in range(7):
 
@@ -116,7 +116,7 @@ def populate_directions():
     # and generates SQL to insert into edges table
 
     # First of all, retrieve all nodes from database and store in dictionary keyed on node id
-    cnx = mysql.connector.connect(user=user, host=host, database=database, password=password)
+    cnx = mysql.connector.connect(user=user, host=host, database='wisley_pt', password=password)
 
     cursor = cnx.cursor()
 
@@ -126,7 +126,7 @@ def populate_directions():
 
     # Open file to store SQL statements
     f = open('update_edges_directions.sql', 'w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     for node1, node2 in cursor:
 
@@ -155,16 +155,16 @@ def copy_proj_coordinates():
 
     # Open file to store SQL statements
     f = open('update_proj_coords.sql', 'w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     # First of all, retrieve all flower beds from database in a buffered cursor
-    cnx = mysql.connector.connect(user=user, host=host, database=database, password=password)
+    cnx = mysql.connector.connect(user=user, host=host, database='wisley_pt', password=password)
 
     cursor = cnx.cursor()
 
     query = 'SELECT e.node1, e.node2, ST_AsText(n.proj_coord) ' \
-            'FROM wisley.edge AS e ' \
-            'JOIN wisley.node AS n ' \
+            'FROM wisley_pt.edge AS e ' \
+            'JOIN wisley_pt.node AS n ' \
             'ON e.node1 = n.id;'
 
     cursor.execute(query)
@@ -181,8 +181,8 @@ def copy_proj_coordinates():
     cursor = cnx.cursor()
 
     query = 'SELECT e.node1, e.node2, ST_AsText(n.proj_coord) ' \
-            'FROM wisley.edge AS e ' \
-            'JOIN wisley.node AS n ' \
+            'FROM wisley_pt.edge AS e ' \
+            'JOIN wisley_pt.node AS n ' \
             'ON e.node2 = n.id;'
 
     cursor.execute(query)
@@ -309,7 +309,6 @@ config.read('../Common Files/config.ini')
 
 user = config['MySql']['user']
 host = config['MySql']['host']
-database = config['MySql']['database']
 password = config['MySql']['password']
 geo_string = config['Projections']['geographic']
 proj_string = config['Projections']['projected']

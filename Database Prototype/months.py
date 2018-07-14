@@ -5,7 +5,7 @@ def populate_months():
     import mysql.connector
     import random
 
-    cnx = mysql.connector.connect(user=user, host=host, database=database, password=password)
+    cnx = mysql.connector.connect(user=user, host=host, database='wisley_pt', password=password)
 
     cursor = cnx.cursor()
 
@@ -15,7 +15,7 @@ def populate_months():
 
     # Open file to store SQL statements
     f = open('write_months.sql', 'w')
-    f.write('USE wisley;\n')
+    f.write('USE wisley_pt;\n')
 
     for plant in cursor:
 
@@ -52,7 +52,6 @@ config.read('../Common Files/config.ini')
 
 user = config['MySql']['user']
 host = config['MySql']['host']
-database = config['MySql']['database']
 password = config['MySql']['password']
 
 populate_months()
