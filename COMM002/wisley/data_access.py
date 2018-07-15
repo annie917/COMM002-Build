@@ -505,7 +505,7 @@ class DAO_Route(DAO_Location):
         bed = ProjNode.from_db_string(row[0])
 
         bed.id = bed_id
-        bed.name = 'Centre bed ' + str(bed_id)
+        bed.name = 'Flower Bed ' + str(bed_id)
 
         # Convert projected coordinates to lat and long and return
         return bed.convert()
