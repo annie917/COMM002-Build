@@ -339,7 +339,6 @@ def plant7():
 # Custom Assert functions
 # _*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 
-
 def assert_geonode(node1, node2):
 
     assert type(node1) == type(node2)
