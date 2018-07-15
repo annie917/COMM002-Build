@@ -243,7 +243,7 @@ UPDATE place SET nearest_node = 9 WHERE id = 3;
 -- Populate plant_bed
 -- -----------------------------------------------------
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (97811, 1);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (59262, 1);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (100980, 1);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (59261, 1);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (311173, 1);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (64031, 1);
@@ -257,38 +257,34 @@ INSERT INTO plant_bed (plant_id, bed_id) VALUES (18556, 3);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (59261, 3);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (97811, 3);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (97224, 3);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (76294, 4);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (288795, 4);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (59261, 4);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (100980, 4);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (72209, 4);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (311173, 4);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (97224, 4);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (64031, 4);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (59262, 4);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (311173, 5);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (97811, 5);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (76294, 5);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (97224, 5);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (18556, 5);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (7704, 6);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (18556, 6);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (100980, 6);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (59262, 6);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (97811, 6);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (97224, 6);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (288795, 6);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (18556, 6);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (59261, 6);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (288795, 7);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (97811, 7);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (76294, 7);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (59262, 7);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (59261, 7);
 INSERT INTO plant_bed (plant_id, bed_id) VALUES (72209, 7);
-INSERT INTO plant_bed (plant_id, bed_id) VALUES (7704, 7);
+INSERT INTO plant_bed (plant_id, bed_id) VALUES (64031, 7);
 
 -- -----------------------------------------------------
 -- Populate plant_month
 -- -----------------------------------------------------
-INSERT INTO plant_month (plant_id, month_id) VALUES ('7704', 1);
-INSERT INTO plant_month (plant_id, month_id) VALUES ('7704', 10);
 INSERT INTO plant_month (plant_id, month_id) VALUES ('18556', 1);
 INSERT INTO plant_month (plant_id, month_id) VALUES ('18556', 4);
 INSERT INTO plant_month (plant_id, month_id) VALUES ('59261', 5);
 INSERT INTO plant_month (plant_id, month_id) VALUES ('59261', 8);
-INSERT INTO plant_month (plant_id, month_id) VALUES ('59262', 10);
-INSERT INTO plant_month (plant_id, month_id) VALUES ('59262', 11);
 INSERT INTO plant_month (plant_id, month_id) VALUES ('64031', 3);
 INSERT INTO plant_month (plant_id, month_id) VALUES ('64031', 9);
 INSERT INTO plant_month (plant_id, month_id) VALUES ('72209', 3);
