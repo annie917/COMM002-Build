@@ -110,9 +110,9 @@ class Place(GeoNode):
 
     # Extension of GeoNode to store a place
 
-    def __init__(self, id, lat, long, name):
+    def __init__(self, id, name, long, lat):
 
-        GeoNode.__init__(self, id, lat, long, name)
+        GeoNode.__init__(self, id, name, long, lat)
 
         self.description = ''
 
