@@ -12,7 +12,8 @@ class BLO_Plants(object):
 
     def get_plants(self, search_string, n):
 
-        # Pass parameters to corresponding data layer method.
+        # search_string - Complete or partial plant common name, botanical name or synonym
+        # n - Maximum number of records to be returned
         # Returns - a list of populated Plant objects, or an empty list if the search string was not found.
 
         plants = self.dao.plants(search_string, n)
@@ -34,7 +35,8 @@ class BLO_PlantLists(object):
 
     def get_seasonal_plants(self, month, n):
 
-        # Pass parameters to corresponding data layer method.
+        # month - Identity of month, where ‘1’ means January
+        # n - Maximum number of records to be returned
         # Returns - a list of Plant Objects representing the n seasonal plants,
         # or an empty list if the plant was not found.
 
@@ -44,8 +46,9 @@ class BLO_PlantLists(object):
 
     def get_bed_plants(self, id, n):
 
-        # Pass parameters to corresponding data layer method.
-        # Returns - a list of Plant Objects representing the n plant in bed with id,
+        # id - Unique id of the required flower bed
+        # n - Maximum number of records to be returned
+        # Returns - a list of Plant Objects representing the n plants in bed with id,
         # or an empty list if the bed was not found or was empty.
 
         plants = self.dao.bed_plants(id, n)
@@ -67,7 +70,8 @@ class BLO_GIS(object):
 
     def get_flower_beds(self, plant, n):
 
-        # Pass parameters to corresponding data layer method.
+        # Plant - Plant name number of a plant
+        # n - Maximum number of records to be returned
         # Returns - a list of GeoNode Objects representing the n flower beds, or an empty list if the plant was not found.
 
         flower_beds = self.dao.flower_beds(plant, n)
@@ -78,7 +82,7 @@ class BLO_GIS(object):
 
     def get_places(self, n):
 
-        # Pass parameters to corresponding data layer method.
+        # n - Maximum number of records to be returned
         # Returns - a list of Place Objects representing the n places, or an empty list not found.
 
         places = self.dao.places(n)
@@ -102,6 +106,9 @@ class BLO_Route(object):
 
     def get_place_route(self, id):
 
+        # id - Unique identifier of a place
+        # Returns - populated Route object
+
         # Get node closest to place and calculate route between location and given place
         route = self._get_route(self.dao.place_nearest_node(id))
         # Populate destination details
@@ -110,6 +117,9 @@ class BLO_Route(object):
         return route
 
     def get_bed_route(self, id):
+
+        # id - Unique identifier of a flower bed
+        # Returns - populated Route object
 
         # Get node closest to flower bed and calculate route between location and given flower bed
         route = self._get_route(self.dao.bed_nearest_node(id))
