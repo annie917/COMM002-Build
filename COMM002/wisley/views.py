@@ -195,7 +195,7 @@ def route_bed(id):
     """@app.route('/route/bed') takes
     lat (latitude, coercible to float)
     long (longitude, coercible to float)
-    id (id of a flower bed, coercible to int)
+    id (id of a flower bed, int)
     Calculates the shortest route between the given flower bed and a position defined by lat, long
     Returns a Route object.
     If route cannot be calculated, an empty object is returned"""
@@ -243,7 +243,7 @@ def route_place(id):
     """@app.route('/route/place') takes
     lat (latitude, coercible to float)
     long (longitude, coercible to float)
-    id (id of a place, coercible to int)
+    id (id of a place, int)
     Calculates the shortest route between the given place and a position defined by lat, long
     Returns a Route object.
     If route cannot be calculated, an empty object is returned"""
