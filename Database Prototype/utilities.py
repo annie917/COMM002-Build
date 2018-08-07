@@ -2,7 +2,7 @@ def nearest_node_to_bed():
 
     import mysql.connector
 
-    #     Works out the nearest node to each flower bed and stores it in the flower beds table
+    # Works out the nearest node to each flower bed and stores it in the flower beds table
 
     # Open file to store SQL statements
     f = open('update_beds.sql', 'w')
@@ -42,7 +42,7 @@ def nearest_node_to_place():
 
     import mysql.connector
 
-    #     Works out the nearest node to each place and stores it in the place table
+    # Works out the nearest node to each place and stores it in the place table
 
     # Open file to store SQL statements
     f = open('update_place.sql', 'w')
@@ -78,6 +78,8 @@ def nearest_node_to_place():
     return
 
 def populate_beds():
+
+    # Creates script to randomly populate each flower bed with 5 plants
 
     import random
     import xml.etree.ElementTree as ET
@@ -151,7 +153,7 @@ def copy_proj_coordinates():
 
     import mysql.connector
 
-    #     Works out the nearest node to each flower bed and stores it in the flower beds table
+    # Copies projected coordinates from node to edge table
 
     # Open file to store SQL statements
     f = open('update_proj_coords.sql', 'w')
