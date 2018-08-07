@@ -275,10 +275,12 @@ def plant6():
     plant.spread = '0-0.1 metre'
     plant.time_to_full_height = '2-5 years'
     plant.accepted_botanical_name = '<em>Tulipa</em> <em>humilis</em> Violacea Group (15)'
-    plant.description = 'Violacea Group are dwarf perennial bulbs, to 15cm tall, with narrow grey-green leaves. Flowers, pink-purple with a yellow base, appear in late spring'
+    plant.description = 'Violacea Group are dwarf perennial bulbs, to 15cm tall, with narrow grey-green leaves. ' \
+                        'Flowers, pink-purple with a yellow base, appear in late spring'
     plant.soil_type = 'Loam, Chalk or Sand'
     plant.foliage = 'Deciduous'
-    plant.uses = 'City/Courtyard Gardens, Cottage/Informal Garden, Flower borders and beds, Patio/Container Plants, Rock Garden or Wildflower meadow'
+    plant.uses = 'City/Courtyard Gardens, Cottage/Informal Garden, Flower borders and beds, Patio/Container Plants, ' \
+                 'Rock Garden or Wildflower meadow'
     plant.aspect = 'South-facing, West-facing or East-facing'
     plant.flower_colour = 'Purple, Yellow and  Dark Pink in Spring'
     plant.moisture = 'Well-drained'
