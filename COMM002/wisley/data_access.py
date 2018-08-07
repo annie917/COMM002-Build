@@ -552,7 +552,7 @@ class DAO_Route(DAO_Location):
         # Arguments:
         # node1 - id of origin node
         # node2 - id of destination node
-        # Returns a populated Direction object
+        # Returns a populated Stage object
 
         # Edges are stored such that node1 < node2, swap nodes over if needed
 
