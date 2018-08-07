@@ -43,6 +43,8 @@ def import_polygons():
 
 def import_points():
 
+    # Parses KML into SQL to insert nodes into database
+
     tree = ET.parse('./nodes.kml')
 
     f = open('create_nodes.sql', 'w')
@@ -75,6 +77,8 @@ def import_points():
 
 
 def populate_places():
+
+    # Creates script to insert places into database
 
     f = open('create_places.sql', 'w')
     f.write('USE wisley_pt;\n')
