@@ -2,6 +2,8 @@
 
 import configparser
 
+# Program to create an XML file containing n plant records
+
 config = configparser.ConfigParser()
 
 config.read('./config.ini')
