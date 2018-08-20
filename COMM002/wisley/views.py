@@ -12,6 +12,10 @@ from wisley.models import BedNotFound
 from wisley.models import PlaceNotFound
 
 
+@app.route('/')
+def index():
+    return 'Wisley API Home'
+
 @app.route('/plants')
 def get_plants():
 
