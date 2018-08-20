@@ -4,4 +4,7 @@ setup(
     name='wisley',
     packages=['wisley'],
     include_package_data=True,
+    install_requires=[
+        'flask',
+    ],
 )
