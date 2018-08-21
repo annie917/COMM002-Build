@@ -7,3 +7,4 @@ cd COMM002-Build
 pip install -r requirements.txt
 pip install pyproj
 pip install -e COMM002
+gunicorn --chdir /home/ubuntu/COMM002-Build wisley:app
