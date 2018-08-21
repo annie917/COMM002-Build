@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chmmod 777 install2.sh
+chmod 777 install2.sh
 sudo apt-get -y update
 sudo apt-get -y install python3-pip
 sudo apt-get -y install nginx
