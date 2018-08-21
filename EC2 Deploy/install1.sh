@@ -1,6 +1,5 @@
 #!/bin/bash
 
-chmod 777 ~/COMM002-Build/EC2\ Deploy/install2.sh
 sudo apt-get -y update
 sudo apt-get -y install python3-pip
 sudo apt-get -y install nginx
